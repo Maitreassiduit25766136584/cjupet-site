@@ -1,1 +1,150 @@
-Contact.html
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - CJUPET</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #00695c;
+      color: white;
+      padding: 15px 0;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    header img {
+      height: 60px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      background-color: #00796b;
+      padding: 10px 15px;
+      margin: 5px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #004d40;
+    }
+
+    .content {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      color: #004d40;
+      margin-bottom: 20px;
+    }
+
+    form {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 30px;
+      text-align: left;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #004d40;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 15px;
+      font-family: "Poppins", sans-serif;
+    }
+
+    button {
+      margin-top: 20px;
+      background-color: #00796b;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #004d40;
+    }
+
+    .footer {
+      background-color: #004d40;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      margin-top: 30px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="CJUPET Logo">
+    <h2>Coopérative des Jeunes Unis pour la Promotion des Talents</h2>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="evenements.html">Nos Événements</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="content">
+    <h1>Contactez-nous</h1>
+    <p>Vous pouvez nous écrire ou nous joindre directement par téléphone.</p>
+
+    <form action="mailto:cjupet.impano@gmail.com" method="post" enctype="text/plain">
+      <label for="name">Nom complet :</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Adresse e-mail :</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Votre message :</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Envoyer</button>
+    </form>
+
+    <p style="margin-top:30px;">
+      📞 Téléphone : +257 69136730 / +257 69097723<br>
+      📧 Email : cjupet.impano@gmail.com<br>
+      📍 Bujumbura, Burundi
+    </p>
+  </div>
+
+  <div class="footer">
+    © 2025 CJUPET | Développé par NIYIBIZI AIMABLE
+  </div>
+
+</body>
+</html>
