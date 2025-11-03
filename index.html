@@ -1,26 +1,173 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CJUPET - Test</title>
-  <style>
-    body {
-      background: linear-gradient(to right, #0099ff, #00cc99);
-      color: white;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin-top: 20%;
-      animation: fadein 2s ease;
-    }
-    @keyframes fadein {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-  </style>
-</head>
-<body>
-  <h1>Bienvenue sur le site du CJUPET 🎉</h1>
-  <p>Si vous voyez ce message, votre site fonctionne parfaitement !</p>
-</body>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>C.J.U.P.T — Coopérative des Jeunes Unis pour la Promotion des Talents</title>
+  <meta name="description" content="C.J.U.P.T — Unir les jeunes pour promouvoir les talents locaux : formation, médias, éco-innovation." />
+  <link rel="icon" href="assets/CJUPT_favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+</index.html
+style.css
+script.js
+media/>
+index.html
+style.css
+script.js
+media/<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">
+        <img src="assets/CJUPT_logo_microphone.png" alt="C.J.U.P.T logo" class="logo" />
+      </a>
+      <div class="tagline">Jeunes connectés et créatifs</div>
+      <nav class="nav">
+        <a href="#about">À propos</a>
+        <a href="#programs">Nos Activités</a>
+        <a href="#talents">Nos Talents</a>
+        <a href="#partners">Partenaires</a>
+        <a href="#contact" class="btn-outline">Contact</a>
+      </nav>
+      <button class="hamburger" aria-label="menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO full width -->
+    <section class="hero hero-full">
+      <img src="assets/banner.png" alt="Jeunes en collaboration" class="hero-bg" />
+      <div class="hero-overlay">
+        <h1 class="reveal">Inspirer, connecter et promouvoir les talents de demain.</h1>
+        <p class="reveal delay">La Coopérative des Jeunes Unis pour la Promotion des Talents (C.J.U.P.T)</p>
+        <div class="hero-actions reveal delay2">
+          <a class="btn-primary" href="#programs">Nos programmes</a>
+          <a class="btn-ghost" href="#contact">Rejoindre</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="container">
+        <h2 class="reveal">Notre mission</h2>
+        <p class="reveal delay">Nous réunissons les jeunes pour promouvoir leurs talents, protéger la nature et utiliser la technologie comme levier d’impact social.</p>
+        <div class="features">
+          <article class="feature reveal delay2">
+            <h3>Formation</h3>
+            <p>Ateliers pratiques, mentoring et ressources numériques.</p>
+          </article>
+          <article class="feature reveal delay2">
+            <h3>Médias & diffusion</h3>
+            <p>Production de contenus, podcasts et radios locales.</p>
+          </article>
+          <article class="feature reveal delay2">
+            <h3>Éco-innovation</h3>
+            <p>Projets durables mêlant écologie et tech.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAMS -->
+    <section id="programs" class="section programs">
+      <div class="container">
+        <h2 class="reveal">Nos programmes</h2>
+        <div class="cards">
+          <div class="program reveal delay2">
+            <h4>Incubateur de talents</h4>
+            <p>Accompagnement 6 mois pour projets artistiques et tech.</p>
+            <a class="link-more" href="#">En savoir plus →</a>
+          </div>
+          <div class="program reveal delay2">
+            <h4>Podcast & Radio</h4>
+            <p>Ateliers production, diffusion et prise de parole.</p>
+            <a class="link-more" href="#">En savoir plus →</a>
+          </div>
+          <div class="program reveal delay2">
+            <h4>Éco-Startup</h4>
+            <p>Formation à l'entrepreneuriat vert et à la gestion de projet.</p>
+            <a class="link-more" href="#">En savoir plus →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TALENTS -->
+    <section id="talents" class="section talents">
+      <div class="container">
+        <h2 class="reveal">Nos talents</h2>
+        <p class="reveal delay">Découvre les jeunes créateurs, musiciens, développeurs et entrepreneurs que nous accompagnons.</p>
+      </div>
+    </section>
+
+    <!-- PARTNERS -->
+    <section id="partners" class="section partners">
+      <div class="container">
+        <h2 class="reveal">Nos partenaires</h2>
+        <p class="reveal delay">Logos et soutiens — à compléter.</p>
+        <div class="partners-grid reveal delay2">
+          <div class="partner">Partenaire 1</div>
+          <div class="partner">Partenaire 2</div>
+          <div class="partner">Partenaire 3</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="container contact-grid">
+        <div>
+          <h2 class="reveal">Contact</h2>
+          <p class="reveal delay">Écris-nous pour rejoindre, proposer un projet ou collaborer.</p>
+          <ul class="contact-list reveal delay2">
+            <li>Email: <a href="mailto:cjupet.impano@gmail.com">cjupet.impano@gmail.com</a></li>
+            <li>Téléphone: +257 69136730 / +257 69097723</li>
+            <li>Adresse: [Ville, Pays]</li>
+          </ul>
+        </div>
+
+        <form class="contact-form reveal delay2" action="https://formspree.io/f/your-form-id" method="POST">
+          <label>Nom<input type="text" name="name" required /></label>
+          <label>Email<input type="email" name="email" required /></label>
+          <label>Message<textarea name="message" rows="5" required></textarea></label>
+          <input type="hidden" name="_subject" value="Nouveau message C.J.U.P.T" />
+          <button type="submit" class="btn-primary">Envoyer</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© 2025 C.J.U.P.T — Tous droits réservés</div>
+      <div class="socials">
+        <a href="#" aria-label="facebook">FB</a>
+        <a href="#" aria-label="twitter">TW</a>
+        <a href="#" aria-label="instagram">IG</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const ham = document.querySelector('.hamburger');
+    const nav = document.querySelector('.nav');
+    ham && ham.addEventListener('click', () => {
+      const expanded = ham.getAttribute('aria-expanded') === 'true';
+      ham.setAttribute('aria-expanded', String(!expanded));
+      nav.classList.toggle('nav-open');
+    });
+
+    const reveals = document.querySelectorAll('.reveal');
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){ entry.target.classList.add('active'); }
+      });
+    }, { threshold: 0.15 });
+    reveals.forEach(r => obs.observe(r));
+  </script>
+index.html
+style.css
+script.js
+media/</body>
 </html>
