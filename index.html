@@ -1,40 +1,41 @@
-<!doctype html>
-<html lang="fr">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>C.J.U.P.T — Coopérative des Jeunes Unis pour la Promotion des Talents</title>
-  <meta name="description" content="C.J.U.P.T — Unir les jeunes pour promouvoir les talents locaux : formation, médias, éco-innovation." />
-  <link rel="icon" href="assets/CJUPT_favicon.png" />
-  <link rel="stylesheet" href="styles.css" />
-</index.html
-style.css
-script.js
-media/>
-index.html
-style.css
-script.js
-media/<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="/">
-        <img src="assets/CJUPT_logo_microphone.png" alt="C.J.U.P.T logo" class="logo" />
-      </a>
-      <div class="tagline">Jeunes connectés et créatifs</div>
-      <nav class="nav">
-        <a href="#about">À propos</a>
-        <a href="#programs">Nos Activités</a>
-        <a href="#talents">Nos Talents</a>
-        <a href="#partners">Partenaires</a>
-        <a href="#contact" class="btn-outline">Contact</a>
-      </nav>
-      <button class="hamburger" aria-label="menu" aria-expanded="false">☰</button>
-    </div>
-  </header>
+<!-- Écran d'accueil avec logo CJUPT -->
+<div id="splash-screen">
+  <img src="media/CJUPT_logo_web_1000px.png" alt="Logo CJUPT" id="splash-logo">
+  <audio id="splash-sound" src="media/soft-start.mp3"></audio>
+</div>
 
-  <main>
-    <!-- HERO full width -->
-    <section class="hero hero-full">
+<style>
+  #splash-screen {
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(135deg, #009688, #004d40);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 1.2s ease;
+  }
+  #splash-logo {
+    width: 160px;
+    animation: fadeIn 2s ease forwards;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+  }
+</style>
+
+<script>
+  window.addEventListener("load", () => {
+    const splash = document.getElementById("splash-screen");
+    const sound = document.getElementById("splash-sound");
+    sound.volume = 0.4;
+    sound.play().catch(() => {}); // Ignore erreur auto-play
+    setTimeout(() => splash.style.opacity = "0", 2000);
+    setTimeout(() => splash.remove(), 3200);
+  });
+</script>    <section class="hero hero-full">
       <img src="assets/banner.png" alt="Jeunes en collaboration" class="hero-bg" />
       <div class="hero-overlay">
         <h1 class="reveal">Inspirer, connecter et promouvoir les talents de demain.</h1>
