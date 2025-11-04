@@ -1,0 +1,13 @@
+
+:root{--bg1:#e9fbf7;--accent1:#0e7490;--accent2:#0ea5a4;--dark:#072226}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:linear-gradient(180deg,var(--bg1),#ffffff);color:var(--dark)}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 18px;background:transparent;position:sticky;top:0;z-index:50}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{height:56px;border-radius:8px}
+.hero{display:grid;place-items:center;text-align:center;padding:56px;background:linear-gradient(135deg,var(--accent1),var(--accent2));color:#fff}
+.main{max-width:1100px;margin:30px auto;padding:0 18px}
+.card{background:#fff;border-radius:12px;padding:20px;margin-bottom:18px;box-shadow:0 8px 30px rgba(2,6,23,0.04)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+footer{padding:18px;text-align:center;color:rgba(3,7,18,0.6)}
+a.cta{display:inline-block;background:var(--accent2);color:white;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:700;margin-top:12px}
+@media(min-width:840px){.hero{padding:80px}.hero h1{font-size:2.4rem}}

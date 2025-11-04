@@ -4,105 +4,28 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>CJUPT — Coopérative des Jeunes Unis pour la Promotion des Talents</title>
-
-  <!-- Styles intégrés pour éviter les problèmes de fichier CSS manquant -->
-  <style>
-    :root{
-      --bg1: #e9fbf7;
-      --accent-1: #0e7490;
-      --accent-2: #0ea5a4;
-      --dark: #072226;
-      --card:#ffffff;
-    }
-    *{box-sizing:border-box}
-    body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:linear-gradient(180deg,var(--bg1),#ffffff);color:var(--dark)}
-    header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 18px;background:transparent;position:sticky;top:0;backdrop-filter:blur(6px);z-index:50}
-    .brand{display:flex;align-items:center;gap:12px}
-    .brand img{height:56px;width:auto;border-radius:8px}
-    .brand .title{font-weight:700;font-size:1.05rem}
-    .lang-switch{display:flex;gap:8px;align-items:center}
-    .lang-button{background:transparent;border:1px solid rgba(11,15,20,0.08);padding:8px 10px;border-radius:8px;cursor:pointer;font-weight:600;color:var(--dark)}
-    .hero{display:grid;grid-template-columns:1fr;place-items:center;text-align:center;padding:56px 18px;background:linear-gradient(135deg,var(--accent-1),var(--accent-2));color:#fff}
-    .hero h1{margin:8px 0;font-size:1.6rem}
-    .hero p{margin:0;opacity:0.95;max-width:860px}
-    main{max-width:1100px;margin:30px auto;padding:0 18px}
-    section.card{background:var(--card);border-radius:12px;padding:20px;margin-bottom:18px;box-shadow:0 8px 30px rgba(2,6,23,0.04)}
-    h2{color:var(--accent-1);margin:0 0 12px 0}
-    .grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
-    footer{padding:18px;text-align:center;color:rgba(3,7,18,0.6)}
-    a.cta{display:inline-block;background:var(--accent-2);color:white;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:700;margin-top:12px}
-    /* responsive */
-    @media(min-width:840px){
-      .hero{padding:80px 18px}
-      .hero h1{font-size:2.4rem}
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Header -->
   <header>
-    <div class="brand">
-      <img id="logo" src="media/CJUPT_logo_web_1000px.png" alt="Logo CJUPT">
-      <div>
-        <div class="title" id="site-title">Coopérative des Jeunes Unis pour la Promotion des Talents</div>
-        <div style="font-size:0.85rem;color:rgba(2,6,23,0.6)" id="site-sub">CJUPT — Jeunes, connectés et créatifs</div>
-      </div>
-    </div>
-
-    <div class="lang-switch">
-      <button class="lang-button" data-lang="fr" aria-pressed="true">Français</button>
-      <button class="lang-button" data-lang="en" aria-pressed="false">English</button>
-    </div>
+    <div class="brand"><img src="media/CJUPT_logo_web_1000px.png" alt="CJUPT Logo"><div><strong>Coopérative des Jeunes Unis pour la Promotion des Talents</strong><div style="font-size:0.85rem;color:#074">CJUPT — Jeunes, connectés et créatifs</div></div></div>
+    <div><a href="actualites.html">Actualités</a> · <a href="evenements.html">Événements</a> · <a href="contact.html">Contact</a></div>
   </header>
 
-  <!-- Hero -->
-  <section class="hero" aria-labelledby="hero-title">
-    <section id="programmes">
-      <h2>Nos programmes</h2>
+  <section class="hero" style="background-image:url('media/banner.jpg');background-size:cover;background-position:center;">
+    <div>
+      <h1>Bienvenue chez CJUPT</h1>
+      <p>Collectif de jeunes pour promouvoir les talents, protéger la nature et utiliser la technologie comme levier d'impact social.</p>
+      <a class="cta" href="contact.html">Nous contacter</a>
+    </div>
+  </section>
 
-      <h3>Incubateur de talents</h3>
-      <p>Accompagnement de 6 mois pour projets artistiques, techniques et culturels.</p>
-
-      <h3>Podcast & Radio</h3>
-      <p>Ateliers de production, diffusion et prise de parole publique.</p>
-
-      <h3>Éco-Startup</h3>
-      <p>Formation à l’entrepreneuriat vert et à la gestion durable de projets.</p>
-    </section>
-
-    <section id="talents">
-      <h2>Nos talents</h2>
-      <p>Découvrez les jeunes créateurs, musiciens, développeurs et entrepreneurs que nous accompagnons.</p>
-    </section>
-
-    <section id="partenaires">
-      <h2>Nos partenaires</h2>
-      <p>Logos et soutiens — à compléter.</p>
-      <ul>
-        <li>Partenaire 1</li>
-        <li>Partenaire 2</li>
-        <li>Partenaire 3</li>
-      </ul>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Écris-nous pour rejoindre, proposer un projet ou collaborer.</p>
-      <ul>
-        <li><strong>Email :</strong> <a href="mailto:cjupet.impano@gmail.com">cjupet.impano@gmail.com</a></li>
-        <li><strong>Téléphone :</strong> +257 69136730 / +257 69097723</li>
-        <li><strong>Adresse :</strong> Bujumbura, Burundi</li>
-      </ul>
-    </section>
+  <main class="main">
+    <section class="card"><h2>Notre mission</h2><p>Le CJUPT réunit les jeunes pour promouvoir leurs talents, soutenir l'innovation et protéger l'environnement. Nous organisons ateliers, formations et événements pour encourager la créativité.</p></section>
+    <section class="card"><h2>Nos programmes</h2><div class="grid"><div><h3>Incubateur de talents</h3><p>Accompagnement de projets artistiques et techniques.</p></div><div><h3>Podcast & Radio</h3><p>Ateliers de production audio et diffusion.</p></div><div><h3>Éco-Innovation</h3><p>Projets durables mêlant écologie et technologie.</p></div></div></section>
+    <section class="card"><h2>Contact</h2><p>Téléphone: +257 69136730 / +257 69097723<br>Email: <a href="mailto:cjupet.impano@gmail.com">cjupet.impano@gmail.com</a><br>Adresse: Bujumbura, Burundi</p></section>
   </main>
 
-  <footer>
-    <p>© 2025 <strong>C.J.U.P.T</strong> — Tous droits réservés.</p>
-    <p>
-      <a href="#">Facebook</a> | 
-      <a href="#">Instagram</a> | 
-      <a href="#">Twitter</a>
-    </p>
-  </footer>
+  <footer><p>© 2025 C.J.U.P.T — Développé par NIYIBIZI AIMABLE — Bujumbura, Burundi</p></footer>
 </body>
 </html>
