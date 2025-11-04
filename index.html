@@ -1,174 +1,86 @@
-<!-- Écran d'accueil avec logo CJUPT -->
-<div id="splash-screen">
-  <img src="media/CJUPT_logo_web_1000px.png" alt="Logo CJUPT" id="splash-logo">
-  <audio id="splash-sound" src="media/soft-start.mp3"></audio>
-</div>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>C.J.U.P.T — Coopérative des Jeunes Unis pour la Promotion des Talents</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-<style>
-  #splash-screen {
-    position: fixed;
-    inset: 0;
-    background: linear-gradient(135deg, #009688, #004d40);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 9999;
-    opacity: 1;
-    transition: opacity 1.2s ease;
-  }
-  #splash-logo {
-    width: 160px;
-    animation: fadeIn 2s ease forwards;
-  }
-  @keyframes fadeIn {
-    from { opacity: 0; transform: scale(0.8); }
-    to { opacity: 1; transform: scale(1); }
-  }
-</style>
+<body>
+  <header>
+    <img src="media/CJUPT_logo_web_1000px.png" alt="Logo CJUPT" class="logo">
+    <h1>Coopérative des Jeunes Unis pour la Promotion des Talents (C.J.U.P.T)</h1>
+    <p class="slogan">Inspirer, connecter et promouvoir les talents de demain 🌱</p>
+  </header>
 
-<script>
-  window.addEventListener("load", () => {
-    const splash = document.getElementById("splash-screen");
-    const sound = document.getElementById("splash-sound");
-    sound.volume = 0.4;
-    sound.play().catch(() => {}); // Ignore erreur auto-play
-    setTimeout(() => splash.style.opacity = "0", 2000);
-    setTimeout(() => splash.remove(), 3200);
-  });
-</script>    <section class="hero hero-full">
-      <img src="assets/banner.png" alt="Jeunes en collaboration" class="hero-bg" />
-      <div class="hero-overlay">
-        <h1 class="reveal">Inspirer, connecter et promouvoir les talents de demain.</h1>
-        <p class="reveal delay">La Coopérative des Jeunes Unis pour la Promotion des Talents (C.J.U.P.T)</p>
-        <div class="hero-actions reveal delay2">
-          <a class="btn-primary" href="#programs">Nos programmes</a>
-          <a class="btn-ghost" href="#contact">Rejoindre</a>
-        </div>
-      </div>
+  <main>
+    <section id="mission">
+      <h2>Notre mission</h2>
+      <p>Nous réunissons les jeunes pour promouvoir leurs talents, protéger la nature et utiliser la technologie comme levier d’impact social.</p>
     </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="section about">
-      <div class="container">
-        <h2 class="reveal">Notre mission</h2>
-        <p class="reveal delay">Nous réunissons les jeunes pour promouvoir leurs talents, protéger la nature et utiliser la technologie comme levier d’impact social.</p>
-        <div class="features">
-          <article class="feature reveal delay2">
-            <h3>Formation</h3>
-            <p>Ateliers pratiques, mentoring et ressources numériques.</p>
-          </article>
-          <article class="feature reveal delay2">
-            <h3>Médias & diffusion</h3>
-            <p>Production de contenus, podcasts et radios locales.</p>
-          </article>
-          <article class="feature reveal delay2">
-            <h3>Éco-innovation</h3>
-            <p>Projets durables mêlant écologie et tech.</p>
-          </article>
-        </div>
-      </div>
+    <section id="formation">
+      <h2>Formation</h2>
+      <p>Ateliers pratiques, mentoring et ressources numériques.</p>
     </section>
 
-    <!-- PROGRAMS -->
-    <section id="programs" class="section programs">
-      <div class="container">
-        <h2 class="reveal">Nos programmes</h2>
-        <div class="cards">
-          <div class="program reveal delay2">
-            <h4>Incubateur de talents</h4>
-            <p>Accompagnement 6 mois pour projets artistiques et tech.</p>
-            <a class="link-more" href="#">En savoir plus →</a>
-          </div>
-          <div class="program reveal delay2">
-            <h4>Podcast & Radio</h4>
-            <p>Ateliers production, diffusion et prise de parole.</p>
-            <a class="link-more" href="#">En savoir plus →</a>
-          </div>
-          <div class="program reveal delay2">
-            <h4>Éco-Startup</h4>
-            <p>Formation à l'entrepreneuriat vert et à la gestion de projet.</p>
-            <a class="link-more" href="#">En savoir plus →</a>
-          </div>
-        </div>
-      </div>
+    <section id="medias">
+      <h2>Médias & Diffusion</h2>
+      <p>Production de contenus, podcasts et radios locales.</p>
     </section>
 
-    <!-- TALENTS -->
-    <section id="talents" class="section talents">
-      <div class="container">
-        <h2 class="reveal">Nos talents</h2>
-        <p class="reveal delay">Découvre les jeunes créateurs, musiciens, développeurs et entrepreneurs que nous accompagnons.</p>
-      </div>
+    <section id="eco">
+      <h2>Éco-Innovation</h2>
+      <p>Projets durables mêlant écologie, innovation et technologie.</p>
     </section>
 
-    <!-- PARTNERS -->
-    <section id="partners" class="section partners">
-      <div class="container">
-        <h2 class="reveal">Nos partenaires</h2>
-        <p class="reveal delay">Logos et soutiens — à compléter.</p>
-        <div class="partners-grid reveal delay2">
-          <div class="partner">Partenaire 1</div>
-          <div class="partner">Partenaire 2</div>
-          <div class="partner">Partenaire 3</div>
-        </div>
-      </div>
+    <section id="programmes">
+      <h2>Nos programmes</h2>
+
+      <h3>Incubateur de talents</h3>
+      <p>Accompagnement de 6 mois pour projets artistiques, techniques et culturels.</p>
+
+      <h3>Podcast & Radio</h3>
+      <p>Ateliers de production, diffusion et prise de parole publique.</p>
+
+      <h3>Éco-Startup</h3>
+      <p>Formation à l’entrepreneuriat vert et à la gestion durable de projets.</p>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="section contact">
-      <div class="container contact-grid">
-        <div>
-          <h2 class="reveal">Contact</h2>
-          <p class="reveal delay">Écris-nous pour rejoindre, proposer un projet ou collaborer.</p>
-          <ul class="contact-list reveal delay2">
-            <li>Email: <a href="mailto:cjupet.impano@gmail.com">cjupet.impano@gmail.com</a></li>
-            <li>Téléphone: +257 69136730 / +257 69097723</li>
-            <li>Adresse: [Ville, Pays]</li>
-          </ul>
-        </div>
-
-        <form class="contact-form reveal delay2" action="https://formspree.io/f/your-form-id" method="POST">
-          <label>Nom<input type="text" name="name" required /></label>
-          <label>Email<input type="email" name="email" required /></label>
-          <label>Message<textarea name="message" rows="5" required></textarea></label>
-          <input type="hidden" name="_subject" value="Nouveau message C.J.U.P.T" />
-          <button type="submit" class="btn-primary">Envoyer</button>
-        </form>
-      </div>
+    <section id="talents">
+      <h2>Nos talents</h2>
+      <p>Découvrez les jeunes créateurs, musiciens, développeurs et entrepreneurs que nous accompagnons.</p>
     </section>
 
+    <section id="partenaires">
+      <h2>Nos partenaires</h2>
+      <p>Logos et soutiens — à compléter.</p>
+      <ul>
+        <li>Partenaire 1</li>
+        <li>Partenaire 2</li>
+        <li>Partenaire 3</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Écris-nous pour rejoindre, proposer un projet ou collaborer.</p>
+      <ul>
+        <li><strong>Email :</strong> <a href="mailto:cjupet.impano@gmail.com">cjupet.impano@gmail.com</a></li>
+        <li><strong>Téléphone :</strong> +257 69136730 / +257 69097723</li>
+        <li><strong>Adresse :</strong> Bujumbura, Burundi</li>
+      </ul>
+    </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>© 2025 C.J.U.P.T — Tous droits réservés</div>
-      <div class="socials">
-        <a href="#" aria-label="facebook">FB</a>
-        <a href="#" aria-label="twitter">TW</a>
-        <a href="#" aria-label="instagram">IG</a>
-      </div>
-    </div>
+  <footer>
+    <p>© 2025 <strong>C.J.U.P.T</strong> — Tous droits réservés.</p>
+    <p>
+      <a href="#">Facebook</a> | 
+      <a href="#">Instagram</a> | 
+      <a href="#">Twitter</a>
+    </p>
   </footer>
-
-  <script>
-    const ham = document.querySelector('.hamburger');
-    const nav = document.querySelector('.nav');
-    ham && ham.addEventListener('click', () => {
-      const expanded = ham.getAttribute('aria-expanded') === 'true';
-      ham.setAttribute('aria-expanded', String(!expanded));
-      nav.classList.toggle('nav-open');
-    });
-
-    const reveals = document.querySelectorAll('.reveal');
-    const obs = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if(entry.isIntersecting){ entry.target.classList.add('active'); }
-      });
-    }, { threshold: 0.15 });
-    reveals.forEach(r => obs.observe(r));
-  </script>
-index.html
-style.css
-script.js
-media/</body>
+</body>
 </html>
